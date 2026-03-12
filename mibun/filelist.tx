@@ -1,0 +1,23 @@
+https://www.bilibili.com/video/BV1Ab4y127J4?p=16&spm_id_from=pageDriver
+
+cd /Users/yuchangnan/Desktop/videos/javascript/xiaoye/test
+cd /Users/yuchangnan/Desktop/videos/webpack
+
+
+you-get --playlist 
+https://www.youtube.com/playlist?list=PLmOn9nNkQxJEARHuEpVayY6ppiNlkvrnb
+
+ffmpeg -i '' '_.mp4'
+
+ffmpeg -i '' '_.mp4'
+ffmpeg -i '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P1. 转义符号与字符、正则表达式基础、修饰符、元字符).mp4' '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P1. 转义符号与字符、正则表达式基础、修饰符、元字符)_.mp4' && ffmpeg -i '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P2. 正则量词、正则属性、正则方法、正则使用技巧).mp4' '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P2. 正则量词、正则属性、正则方法、正则使用技巧)_.mp4' && ffmpeg -i '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P3. 正则对象方法、match与exec、字符串方法、toString与value.mp4' '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P3. 正则对象方法、match与exec、字符串方法、toString与value_.mp4' && ffmpeg -i '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P4. 正向预查、贪婪与非贪婪模式、匹配特殊字符、replace方法、模板变量替换).mp4' '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P4. 正向预查、贪婪与非贪婪模式、匹配特殊字符、replace方法、模板变量替换)_.mp4' && ffmpeg -i '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P5. 正则实例集合、正向预查深入、不捕获分组).mp4' '【全网首发】JavaScript『正则表达式』深度指南「听不懂找我系列」 (P5. 正则实例集合、正向预查深入、不捕获分组)_.mp4'
+
+ffmpeg -i '' '_.mp4'
+
+ ffmpeg -i '.mp4' '_.mp4'
+ffmpeg -i '.mp4' '_.mp4'
+
+https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv
+
+
+https://www.youtube.com/watch?v=b_J2IerezSM&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=101 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=102 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=103 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=104 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=105 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=106 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=107 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=108 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=109 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=110 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=111 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=112 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=113 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=114 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=115 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=116 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=117 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=118 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=119 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=120 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=121 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=122 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=123 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=124 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=125 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=126  && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=127 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=128 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=129 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=130 && you-get https://www.youtube.com/watch?v=UMDjioWLSmA&list=PLmOn9nNkQxJFiWd13kMX4w5ebum1AFJpv&index=131

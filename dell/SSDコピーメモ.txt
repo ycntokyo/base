@@ -1,0 +1,2638 @@
+git log --all --graph --decorate --oneline
+
+一つのブランチから別のブランチにプッシュはするげと
+変更はなし masterにはできない
+
+git checkout release-st
+git push origin master
+変更なし
+git push 
+git checkout master
+git merge release-st
+変更が反映される
+
+git push -f origin release-st
+
+test
+戻す
+
+git push origin HEAD:release-st
+
+git push -f origin release-st
+
+
+git reset --hard d9a2c38
+git push -f origin master
+
+commit
+
+git reset --hard origin/release-st
+commit したものをreset
+
+git push --force
+
+git update-index --skip-worktree dell/.DS_Store
+
+git ls-files -v | grep ^S
+
+Gitの管理下に戻す
+git update-index --no-skip-worktree path/to/file
+
+
+--assume-unchangedはローカルでファイルが変更されるべきではないものに対して実行
+$ git ls-files -v | grep ^h
+
+$ git update-index --no-assume-unchanged path/to/file
+
+
+---------
+����_�E�����[�h
+
+brew install annie
+
+annie -i https://www.bilibili.com/video/av21877586
+
+-start
+        Playlist video to start at (default 1)
+-end
+        Playlist video to end at
+-items
+        Playlist video items to download. Separated by commas like: 1,5,6,8-10
+-------------
+
+
+Command+R�ŋN���͎��s
+
+Mac������HDD�̃N���[���쐬�̐���
+
+https://datarescue.yamafd.com/howto_clone_hdd_to_another_mac_internal_hdd_3/
+
+
+�o���Ȃ���
+CARBON COPY CLOER
+https://bombich.com/download
+
+http://tokyo.secret.jp/macs/mavericks-ccc.html
+
+
+�u�V�X�e�����ݒ� �� �N���f�B�X�N�v���J���āA�N���f�B�X�N�Ƃ��ĕ\������Ă��邩���m�F
+
+
+�N���[����A�N���m�F
+�I�v�V�����iOption�j
+
+
+BootCamp
+
+https://www.youtube.com/watch?v=x_kqJwwAzfw
+
+https://les2.net/windows10/gpt-drive/
+
+https://appli-world.jp/posts/6193
+
+https://applica.info/windows10-install-can-not
+
+https://www.youtube.com/results?search_query=mbr+to+gpt+mac
+
+�E�����N�����I�t�ɂ���
+
+sudo nvram AutoBoot=%00
+
+�E�����N���𕜌�������
+
+sudo nvram AutoBoot=%03
+
+
+4.1	Mac OS X Public Beta (Siam)
+4.2	Mac OS X 10.0 (Cheetah)
+4.3	Mac OS X 10.1 (Puma)
+4.4	Mac OS X 10.2 (Jaguar)
+4.5	Mac OS X 10.3 (Panther)
+4.6	Mac OS X 10.4 (Tiger)
+4.7	Mac OS X 10.5 (Leopard)
+4.8	Mac OS X 10.6 (Snow Leopard)
+4.9	Mac OS X 10.7 Lion
+4.10	OS X 10.8 Mountain Lion
+4.11	OS X 10.9 Mavericks
+4.12	OS X 10.10 Yosemite
+4.13	OS X 10.11 El Capitan
+4.14	macOS 10.12 Sierra
+4.15	macOS 10.13 High Sierra
+4.16	macOS 10.14 Mojave
+4.17	macOS 10.15 Catalina
+4.18	macOS 11.0 Big Sur
+
+
+flutter install
+https://qiita.com/oekazuma/items/92e9bae4268fea107efa
+
+
+����PATH��ʂ��܂��B
+[PATH_TO_FLUTTER]
+�����ɂ͉𓀂���Flutter�̃f�B���N�g���������Ă��������B
+bash�̏ꍇ
+
+
+echo 'export PATH="$PATH:[PATH_TO_FLUTTER]/flutter/bin"' >> ~/.bash_profile
+source ~/.bash_profile
+zsh�̏ꍇ
+
+echo 'export PATH="$PATH:[PATH_TO_FLUTTER]/flutter/bin"' >> ~/.zshrc
+source ~/.zshrc
+
+
+https://qiita.com/thinkalot/items/1dfdba642906c1bf1fd2
+
+11.3.1	10.14.4 ( Mojave ) �ȏ�	July 2, 2019	
+11.0	10.14.4 ( Mojave ) �ȏ�	September 20, 2019	
+10.2.1	10.14.3 ( Mojave ) �ȏ�	Apr 17, 2019	
+10.2	10.14.3 ( Mojave ) �ȏ�
+
+flutter doctor
+
+sudo gem install cocoapods
+
+cocoapos���G���[
+https://tom-map.com/cocoapods-install/
+
+�G���[
+https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
+
+your system ready to brew 
+
+sudo xcode-select --switch /Appliactions/Xcode.app/Contents/Developer
+suto xcodebuild -runFirstLaunch
+
+
+coco
+
+https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
+
+
+brew install ruby
+
+
+If you need to have ruby first in your PATH run:
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> /Users/xxx/.bash_profile
+
+For compilers to find ruby you may need to set:
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+Follow the instructions to set PATH. Now you will go to see the installed Ruby. Make sure to replace the 'xxx' with your username.
+
+$ echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> /Users/xxx/.bash_profile
+$ echo 'export LDFLAGS="-L/usr/local/opt/ruby/lib"' >> ~/.bash_profile
+$ echo 'export CPPFLAGS="-I/usr/local/opt/ruby/include"' >> ~/.bash_profile
+
+$ source ~/.bash_profile
+
+
+Finally, Make sure your PATH is in place.
+
+$ ruby -v
+ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin18]
+$ which ruby
+/usr/local/opt/ruby/bin/ruby
+You're good to go! Make sure you install by specifying the save destination as follows.
+
+$ sudo gem install -n /usr/local/bin cocoapods
+
+
+https://qiita.com/spring_i/items/181bc3c05142d1f80d93
+
+�����OK�A�p�[�W���������񂤂�
+sudo gem install -v1.8.4 cocoapods -n /usr/local/bin
+
+�C���X�g�[������CocoaPods�̃o�[�W������1.9.0�̈�O��1.8.4�ɂ������܂����i���m�ɂ����ƃC���X�g�[�����Ƀo�[�W�����w�肵���j�B
+https://qiita.com/spring_i/items/181bc3c05142d1f80d93
+
+
+
+https://qiita.com/umechanhika/items/11a42f540e051e978920
+
+[!] Connected device
+�[����PC�ɐڑ�������Ԃ�flutter doctor�����s����Ί���
+
+
+�L�[�`�F�[��
+https://balance-m.net/pc/mac/keychain/
+
+���s�@
+# iOS �V�~�����[�^�̋N���R�}���h
+$ open -a Simulator
+
+flutter create helloworld
+
+# �A�v���N���R�}���h
+$ flutter run
+
+simulator�ݒ�
+https://qiita.com/tomy0610/items/896dc8ec9ba95c33194f
+
+���s�A
+
+vss code
+���s����ƁA�[���I����ʂ��ł�B
+pixsel �Ȃ�Ƃ��̓G���[�Ȃ����B
+
+xcode
+https://www.webprofessional.jp/lesson/swift4designers/lesson01/
+
+code�������āA�{�^���ƂȂ�
+
+android studio
+https://www.petitmonte.com/java/android_hello_world.html
+
+
+flutter
+
+AVD
+nexus5.X
+
+debug
+�ݒ�
+
+Press 'r' �X�V
+p �i
+o ios android
+q
+
+tools/
+
+sdk/tools/emulator.exe
+sdk/emulator/emulator.exe ��
+
+��ɋN�����Ēu��
+EmulatorRun.bat
+sdk/emulator/emulator.exe -netdelay none -netspeed full -avd Nexus_5x_API_28
+�Ǘ����g���Ŏ��s
+
+vsscode
+>flutter run
+
+android/build.gradle
+
+flutter.gradle?
+
+lib/main.dart
+import 'package:flutter/material.dart'; //UIlibrary
+void main(){
+	runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:AppBar(
+					tile:Text('Welcome to flutter')
+				),
+				body:Center(
+					child:Text(
+						'Hello World',
+						textAlign:TextAlign.left,
+						maxLines:1,
+						overflow:TextOverflow.ellipsis,
+						style:TextStyle(
+							fontSize:25.0,
+							color:Color.fromARGB(255,255,125,125),
+							decoration:TextDecoration.underline,
+							decorationStyle:TextDecorationStyle.solid,
+						)
+					),
+				),
+			),
+		);
+	}
+}
+
+Container-><div>����
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				//appBar:AppBar(
+				//	tile:Text('Welcome to flutter')
+				//),
+				body:Center(
+					child:Container(
+						child:new Text('Hello',style:TextStyle(fontsize:40.0)),)
+						alignment:Alignment.center,    //Alignment.bottomCenter
+						width:500.0,
+						height:400.0,
+						color:Colors.lightBlue,
+					)
+				),
+			),
+		);
+	}
+}
+
+padding
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				//appBar:AppBar(
+				//	tile:Text('Welcome to flutter')
+				//),
+				body:Center(
+					child:Container(
+						child:new Text('Hello',style:TextStyle(fontSize:40.0)),
+						alignment:Alignment.topLeft,    //Alignment.bottomCenter
+						width:500.0,
+						height:400.0,
+						//color:Colors.lightBlue,
+						padding:const EdgeInsets.fromLTRB(10.0,30.0,0.0,0.0),   //EdgeInsets.all(10,0),
+						margin:const EdgeInsets.all(10.0),
+						decoration:new BoxDecoration(
+							gradient:const LinearGradient(
+								colors:[Colors.lightBlue,Colors.greenAccent,Colors.purple]
+							),
+							border:Border.all(width:2.0,color:Colors.red),
+						),
+					)
+				),
+			),
+		);
+	}
+}
+
+�摜
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				body:Center(
+					child:Container(
+						child:new Image.network(
+							'http://aaa.com/aaa.jpg',
+							//fit:BoxFit.fill,     //fit:BoxFit.contain, BoxFit.fitWidth,BoxFit.fitHeight,BoxFit.cover
+							//						//BoxFit.scaleDown
+							//color:Colors.greenAccent,
+							//colorBlendMode:BlendMode.darken,   //BlendMode.modulate
+							repeat:ImageRepeat.repeat,           //ImageRepeat.repeatX,
+						),
+						width:300.0,
+						height:200.0,
+						color:Colors.lightBlue
+					)
+				),
+			),
+		);
+	}
+}
+
+List
+
+import 'package:flutter/material.dart'; //UIlibrary
+void main(){			//main=>runApp(MyApp());
+	runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				//body:new Text('ListView Text')
+				body:new ListView(
+					children <Widget>[
+						new ListTitle(
+							loading:new Icon(Icons.perm_camera_mic),
+							title:new Text('perm_camera_mic'),
+						),new ListTitle(
+							loading:new Icon(Icons.add_call),
+							title:new Text('add_call'),
+						),new ListTitle(
+							loading:new Icon(Icons.access_time),
+							title:new Text('access_time'),
+						),
+					]
+				)
+			
+			),
+		);
+	}
+}
+
+
+�摜���X�g
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				//body:new Text('ListView Text')
+				body:new ListView(
+					children <Widget>[
+						new Image.network('http://aaa.com/aaa.png'),
+						new Image.network('http://aaa.com/aaa.png'),
+						new Image.network('http://aaa.com/aaa.png'),
+						new Image.network('http://aaa.com/aaa.png'),
+					]
+				)
+			
+			),
+		);
+	}
+}
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				//body:new Text('ListView Text')
+				body:Center(
+					child:Container(
+						height:200.0,
+						child:new ListView(
+							scrollDirection:Axis.horizontal,
+							childen:<Widget>[
+								new Container(
+									width:180.0,
+									color:Colors.Bluelight
+								),new Container(
+									width:180.0,
+									color:Colors.amber
+								),new Container(
+									width:180.0,
+									color:Colors.deepOrange
+								),new Container(
+									width:180.0,
+									color:Colors.deepPurleAccent
+								),
+							],
+						),
+					),
+				),
+			),
+		);
+	}
+}
+
+����
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				//body:new Text('ListView Text')
+				body:Center(
+					child:Container(
+						height:200.0,
+						child:MyList(),
+						),
+					),
+				),
+			),
+		);
+	}
+}
+
+class MyList extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return ListView(
+			child:new ListView(
+				scrollDirection:Axis.horizontal,
+				childen:<Widget>[
+					new Container(
+						width:180.0,
+						color:Colors.Bluelight
+					),new Container(
+						width:180.0,
+						color:Colors.amber
+					),new Container(
+						width:180.0,
+						color:Colors.deepOrange
+					),new Container(
+						width:180.0,
+						color:Colors.deepPurleAccent
+					),
+				],
+			),
+		);
+	}
+}
+
+����
+void main()=> runApp(MyApp(
+	items:new List <String>.generate(1000,(i)=>"Item $i")   //List(1000) //items:
+));
+
+class MyList extends StatelessWidget{
+	final List<String> items;
+	MyApp({Key key,@required this.items}):super(key:key);
+
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				body:new ListView.builder(
+					itemCount:items.length,
+					itemBuilder:(contet.index){
+						return new ListTitle(
+							title:new Text('${items[index]}')
+						);
+					},
+				),
+			),
+		);
+	}
+}
+
+
+GridView
+
+void main()=> runApp(MyApp(
+));
+
+class MyList extends StatelessWidget{
+
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				body:GridView.count(
+					padding:const EdgeInsets.all(20.0),
+					crossAxisSpacing:10.0
+					crossAxisCount:3,
+					children:<Widget>[
+						const text('I am JsPnag'),
+						const text('I am JsPnag1'),
+						const text('I am JsPnag2'),
+						const text('I am JsPnag3'),
+						const text('I am JsPnag4'),
+						const text('I am JsPnag5'),
+					],
+				),
+			),
+		);
+	}
+}
+
+
+class MyList extends StatelessWidget{
+
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Welcome to flutter',
+			home:Scaffold(
+				appBar:new AppBar(title:new Text('ListView Widget')),
+				body:GridView(
+					gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(
+						crossAxisCount:3,  //�s
+						mainAxisSpacing:2.0,
+						crossAxisSpacing:2.0,
+						childAspectRadio:1.0 //�����A���̔��
+					),
+					children:<WidGet>[
+						new Image.network('http://aaa.com/aaa.png',fit:BoxFit.cover),
+						new Image.network('http://aaa.com/aaa1.png',fit:BoxFit.cover),
+						new Image.network('http://aaa.com/aaa2.png',fit:BoxFit.cover),
+						new Image.network('http://aaa.com/aaa3.png',fit:BoxFit.cover),
+						new Image.network('http://aaa.com/aaa4.png',fit:BoxFit.cover),
+					],
+				),
+			),
+		);
+	}
+}
+
+flutter create demo003
+cd demo003
+
+flutter upgrate
+
+import 'package:flutter/material.dart'; 
+void main=>runApp(MyApp());
+	
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Row Widget Demo',
+			home:Scaffold(
+				appBar:new AppBar(
+					title:new Text('Row Widget'),
+				),
+				body:new Row(
+					children <Widget>[
+						Expanded(child:new RaissedButton(  //new RaissedButton(   Expanded(child:�Ȃ�
+							OnPressed:(){},
+							color:Colors.redAccent,
+							child:new Text('Red Button')
+						),),Expanded(child:new RaissedButton( // ),
+							OnPressed:(){},
+							color:Colors.orangeAccent,
+							child:new Text('Orange Button')
+						),),Expanded(child:new RaissedButton(
+							OnPressed:(){},
+							color:Colors.lightBlue,
+							child:new Text('Blue Button')
+						),
+					]
+				)
+			
+			),
+		);
+	}
+}
+
+children <Widget>[
+	new RaissedButton(  
+		OnPressed:(){},
+		color:Colors.redAccent,
+		child:new Text('Red Button')
+	),
+	new RaissedButton(  
+		OnPressed:(){},
+		color:Colors.redAccent,
+		child:new Text('Red Button')
+	),
+],
+
+Column
+
+import 'package:flutter/material.dart'; 
+void main=>runApp(MyApp());
+	
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Row Widget Demo',
+			home:Scaffold(
+				appBar:new AppBar(
+					title:new Text('Column Widget'),
+				),
+				body:Center(child Column(
+						crossAxisAlignment:CrossAxisAlignment.center, //.end
+						mainAxisAlignment:MainAxisAlignment.center,
+						children <Widget>[
+							Text('I am JSpang'),
+							,Expanded(child:Text('I am JSpang1')),
+							,Text('I am JSpang2'),
+						],
+					),
+				),
+			),
+		);
+	}
+}
+
+�d�˂�
+
+Stack
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			var stack = new Stack(
+				aligment:const FractionalOffset(0.5,1),
+				children:<Widget>[
+					new CircleAvatar(
+						backgroundImage : new networkImage(''),
+						radius:100.0
+					),
+					new Container(
+						decoration:new BoxDecoration(
+							color:Colors.lightBlue,
+						),
+						padding:EdgeInsets.all(5.0),
+						,child:Text('Test'),
+					),
+				],
+			);
+			title:'Row Widget Demo',
+			home:Scaffold(
+				appBar:new AppBar(
+					title:new Text('Column Widget'),
+				),
+				body:Center(
+						child:stack,
+					),
+				),
+			),
+		);
+	}
+}
+
+END1019
+
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			var stack = new Stack(
+				aligment:const FractionalOffset(0.5,1),
+				children:<Widget>[
+					new CircleAvatar(
+						backgroundImage : new networkImage(''),
+						radius:100.0
+					),
+					new Positioned(
+						top:10.0,
+						left:10.0,  //���ړ�
+						child: new Text('Jspang'),
+					),
+					new Positioned(
+						top:10.0,
+						left:10.0,
+						child: new Text('Jspang1'),
+					),
+				],
+			);
+			title:'Row Widget Demo',
+			home:Scaffold(
+				appBar:new AppBar(
+					title:new Text('Column Widget'),
+				),
+				body:Center(
+						child:stack,
+					),
+				),
+			),
+		);
+	}
+}
+
+Card
+class MyApp extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		var card = new Card(
+			child:Column <WidGet>[
+				ListTitle(
+					title:Text('Hello',style:TextStyle(fontWeight:FontWeight.w500)),
+					subTitle:Text('Test');
+					leading:new Icon(Icons.account_box,color:Colors.lightBlue)
+				),
+				new Divider(),
+				ListTitle(
+					title:Text('Hello1',style:TextStyle(fontWeight:FontWeight.w500)),
+					subTitle:Text('Test1');
+					leading:new Icon(Icons.account_box,color:Colors.lightBlue)
+				),
+				new Divider(),
+				ListTitle(
+					title:Text('Hello1',style:TextStyle(fontWeight:FontWeight.w500)),
+					subTitle:Text('Test1');
+					leading:new Icon(Icons.account_box,color:Colors.lightBlue)
+				),
+			],
+		),
+		return MaterialApp(
+			title:'Row Widget Demo',
+			home:Scaffold(
+				appBar:new AppBar(
+					title:new Text('Column Widget'),
+				),
+				body:Center(
+						child:card
+					),
+				),
+			),
+		);
+	}
+}
+
+
+Button
+
+import 'package:flutter/material.dart';
+void main(){
+	runApp(MaterialApp(
+		title:"Test",
+		home:new FirstScreen()
+	)),
+}
+
+class FirstScreen extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Page')),
+			body:Center(
+				child:RaisedButton(
+					child:Text('View'),
+					onPressed:(){
+						Navigator.push(context,MaterialPageRoute(
+							builder:(context)=>SecondScreen()
+						));
+					},
+				),
+			)
+		);
+	}
+}
+
+
+class SecondScreen extends StatelessWidget{
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Second ')),
+			body:Center(
+				child:RaisedButton(
+					child:Text('Return'),
+					onPressed:(){
+						Navigator.pop(context);
+					},
+				),
+			)
+		);
+	}
+}
+
+awesome flutter snippet
+class Product
+{
+	final String title;
+	final String description;
+	Product(this.title,this.description); 
+}
+
+vid main(){
+	runApp(MaterialApp(
+		title:'Test',
+		home:ProductList(
+			products:List.generate(
+				20,
+				(i)=>Product('Shouhin $i','No is $i')
+			)
+		)
+	)),
+}
+
+class ProductList extends StatelessWidget{
+	final List<Product> products;
+	ProductList({Key key,@required this.products}):super(key,key);
+	
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Product List')),
+			body:ListView.builder(
+				itemCount:product.lenght,
+				itemBuilder:(context,index){
+					return ListTitle(
+						title:Text(products[index].title),
+						onTap(){
+							Navigator.push(
+								context,
+								MaterialPageRoute(
+									builder:(context)=>new ProductDetail(product:products[index])
+								)
+							)
+						}
+					);
+				}
+			)
+		);
+	}
+}
+
+
+class ProductDetail extends StatelessWidget{
+	final Product product;
+	ProductDetail({Key key,@required this.product}):super(key:key);
+	
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Product Detail ${product.title}')),
+			body:Center(
+				child:Text('${product.detail})
+			)
+		);
+	}
+}
+
+
+new 
+
+
+vid main(){
+	runApp(MaterialApp(
+		title:'Test',
+		home:FirstPage()
+	)),
+}
+
+class Firstpage extends StatelessWidget{
+	
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Get TelhoneNumber')),
+			body:Center(
+				child:RouteButton()
+			)
+		);
+	}
+}
+
+class RouteButton extends StatelessWidget{
+	final Product product;
+	ProductDetail({Key key,@required this.product}):super(key:key);
+	
+	@Override
+	Widget build(BuildContext context){
+		return raisedButton(
+			OnPressed(){_navigateGirl(context)},
+			child:text('Girl'),
+		);
+	}
+	
+	_navigateGirl(BuildContext context) async{
+		final result = await Navigator.push(
+			context,
+			MaterialPageRoute(builder:(context)=>Girl())
+		);
+		Scaffold.of(context).showSnakBar(SnackBar(content:Text('$result')));
+	}
+}
+
+class Girl extends StatelessWidget{
+	
+	@Override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(
+				title:Text('i am girl')
+			),
+			body:Center(
+				child:Column(
+					RaisedButton(
+						child:Text('One1')
+						onPressed:(){
+							Navigator.pop(context,'One1 139000')
+						},
+					),RaisedButton(
+						child:Text('One2')
+						onPressed:(){
+							Navigator.pop(context,'One2 138001')
+						},
+					),
+				),
+			),
+		);
+	}
+}
+
+pubspec.yml
+#asset: 
+assets:
+ - images/blog.jpg
+
+import 'package:flutter/material.dart';
+void main(){
+	runApp(MyApp())
+}
+
+class MyApp extends StatelessWidget{
+	
+	@Override
+	Widget build(BuildContext context){
+		return Container(
+			child:Image.asset('images/blog.jpg')
+		);
+	}
+}
+
+App package
+icon
+
+mipmap-hdpi
+android/app/src/main/res/mipmap-mdpi
+
+AndroidManifacatual.xml
+<application
+ android:icon="@mipmap/ic_launcher"
+
+>keytool 
+�ȉ��̐���
+key.gks
+
+android/key.properties
+
+keyAlias=key
+storeFile=c:\key.jks
+
+/app/bild.gradle�ύX
+def 
+snigconfig
+
+>flutter build apk
+
+build\app\outputs\apk\release\app-release.apk
+
+>flutter install
+
+
+flutter doctor -v
+
+
+boot Navigator
+
+flutter create demo01
+
+awesome
+----
+import 'package:flutter/material.dart';
+import 'BottomNavigationWidget';
+void main()=>runApp(new MyApp());
+
+class name extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Demo',
+			theme:ThemeData.light(),
+			home:BottomNavigationWidget()
+		);
+	}
+}
+
+----
+BottomNavigationWidget.dart
+
+import 'package:flutter/material.dart';
+import 'pages/home_screeen.dart';
+import 'pages/pages_screeen.dart';
+import 'pages/email_screeen.dart';
+import 'pages/airplay_screeen.dart';
+
+class BottomNavigationWidget extends StatefulWidget{
+	_BottomNavigationWidgetState createState()=>_BottomNavigationWidgetState();
+}
+
+class BottomNavigationWidgetState extends State<BottomNavigationWidget>{
+	final _BottomNavigationColor = Colors.blue;
+	int _currentIndex = 0;
+	List <Widget> list = List();
+	
+	@override 
+	void initState(){
+		list
+			..add(HomeScreeen())
+			..add(EmailScreeen())
+			..add(PageScreeen())
+			..add(AirplayScreeen());
+		super.initState();
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:list[_currentIndex],
+			bottomNavigationBar:BottomNavigationBar(
+				items:[
+					BottomNavigationBarItem(
+						icon:Icon(
+							Icons.home,
+							color:_BottomNavigationColor,
+						),
+						ttle:Text(
+							'Home',
+							style:TextStyle(color:__BottomNavigationColor)
+						)
+					),
+					BottomNavigationBarItem(
+						icon:Icon(
+							Icons.page,
+							color:_BottomNavigationColor,
+						),
+						ttle:Text(
+							'Page',
+							style:TextStyle(color:__BottomNavigationColor)
+						)
+					),
+					BottomNavigationBarItem(
+						icon:Icon(
+							Icons.email,
+							color:_BottomNavigationColor,
+						),
+						ttle:Text(
+							'Email',
+							style:TextStyle(color:__BottomNavigationColor)
+						)
+					),
+					BottomNavigationBarItem(
+						icon:Icon(
+							Icons.airplay,
+							color:_BottomNavigationColor,
+						),
+						ttle:Text(
+							'AirPlay',
+							style:TextStyle(color:__BottomNavigationColor)
+						)
+					),
+				]
+				currentIndex:_currentIndex,
+				onTap:(int index){
+					setState((){
+						_currentIndex = index;
+					});
+				}
+			),
+		);
+	}
+}
+
+/lib/pages
+
+home_screeen.dart
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Home')),
+			body:Center(child:text('HOME'),)
+		);
+	}
+}
+
+pages_screeen.dart
+import 'package:flutter/material.dart';
+
+class PageScreen extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Page')),
+			body:Center(child:text('Page'),)
+		);
+	}
+}
+
+
+email_screeen.dart
+import 'package:flutter/material.dart';
+
+class EmailScreen extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('Email')),
+			body:Center(child:text('Email'),)
+		);
+	}
+}
+
+airplay_screeen.dart
+import 'package:flutter/material.dart';
+
+class AirPlayScreen extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('AirPlay')),
+			body:Center(child:text('AirPlay'),)
+		);
+	}
+}
+
+---
+����Menu
+main.dart
+
+import 'package:flutter/material.dart';
+import 'bottom_appBar_demo.dart';
+
+void main()=>runApp(new MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData(
+				primarySwatch:Colors.lightBlue,
+				
+			),
+			home:BottomAppBarDemo(),
+		);
+	}
+}
+
+
+----
+bottom_appBar_demo.dart
+import 'package:flutter/material.dart';
+import 'each_.dart';
+
+class BottomAppBarDemo extends StatefulWidget{
+	_BottomAppBarState createState()=>_BottomAppBarState();
+}
+
+class _BottomAppBarState etends State<BottomAppBarDemo>{
+	List<Widget> _eachView;
+	int _index=0;
+	void initstate(){
+		super.initState();
+		_eachView=List();
+		_eachView..add(EachView('Home))..add(EachView('JSpng'));
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:_eachView[_index],
+			floatingActionButton:FloatingActionButton(
+				onPressed:(){
+					Navigator.of(context).push(MaterialPageRoute(builder:(BuildContext context))
+						return EachView('New Page');
+					}));
+				},
+				tooltip:'JSPang',
+				child:Icon(
+					Icons.add,
+					Color:Colors.white
+				),
+			),
+			floatingActionButtonLocation:FloatingActionButtonLocation.centerDocked,
+			bottomNavigationBar:BottomAppBar(
+				color:Colors.lightBlue,
+				shape:CircularNotchedRectangle(),
+				child:Row(
+					mainAxisSize:MainAxisSize.max,
+					mainAxisAlignment:MainAxisAlignment.spaceAound,
+					chidldren:<Widget>[
+						IconButton(
+							icon:Icon(Icons.airport),
+							color:Colors.whie,
+							onPressed:(){
+								setState((){
+									_indes=1;
+								}
+							},
+						),IconButton(
+							icon:Icon(Icons.airport),
+							color:Colors.whie,
+							onPressed:(){},
+						),IconButton(
+							icon:Icon(Icons.airport),
+							color:Colors.whie,
+							onPressed:(){},
+						),IconButton(
+							icon:Icon(Icons.airport),
+							color:Colors.whie,
+							onPressed:(){},
+						),
+					],
+				),
+			),
+		);
+	}
+}
+
+---
+each_view.dart
+import 'package:flutter/material.dart';
+
+class EachView extends StatefulWidget{
+	String _title;
+	EachView(this._title);
+	@override
+	_EachView createState()=>_EachViewState();
+}
+
+class _EachViewState etends State<EachView>{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:text(widget._title)),
+			body:Ceneter(child:text(widget._title),)
+		);
+	}
+}
+
+������
+import 'package:flutter/material.dart';
+import 'pages.dart';
+
+void main()=>runApp(new MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData(
+				primarySwatch:Colors.Blue,
+				
+			),
+			home:Firstpage(),
+		);
+	}
+}
+
+---
+pages.dart
+import 'package:flutter/material.dart';
+import 'customer_router.dart';
+
+class FirstPage extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			backgroundColor:Colors.black,
+			appBar:AppBar(
+				title:Text('FirstPages'),style:TextStyle(fontSize:36.0)),
+				elevaton: 4.0 ,
+			),
+			body:Center(
+				child:Icon(
+					Icons:navigate_next,
+					color:Colors.white,
+					size:64.0
+				),
+				onPressed(){
+					//Navigator.of(context).push(MaterialPageRoute(buider:(BuildContext context){
+					//	return SecondPage();
+					//}));
+					Navigator.of(context).push(CustomeRoute(SecondPage()));
+				}
+			)
+		);
+	}
+}
+
+class SecondPage extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			backgroundColor:Colors.pinkAccent,
+			appBar:AppBar(
+				title:Text('SecondPages'),style:TextStyle(fontSize:36.0)),
+				backgroundColor:Colors.pinkAccent,
+				leading:Contaner(),
+				elevaton: 4.0 ,
+			),
+			body:Center(
+				child:Icon(
+					Icons:navigate_before,
+					color:Colors.white,
+					size:64.0
+				),
+				onPressed(){
+					Navigator.of(context).pop();
+				}
+			)
+		);
+	}
+}
+
+---
+customer_router.dart
+import 'package:flutter/material.dart';
+
+class CustomeRoute extends PageRouteBuilder{
+	final Widget widget;
+	CustomeRoute(this.wdget)
+		:super(
+			transitionDuration:Duration(seconds:1), //(seconds:2),
+			pageBuilder:(
+				BuildContext context,
+				Animation<double> animation1,
+				Animation<double> animation2,
+				
+			){
+				return widget;
+			},
+			transitionBuilder:(
+				BuildContext context,
+				Animation<double> animation1,
+				Animation<double> animation2,
+				Widget child
+			){
+				//return FadeTransition(
+				//	opacity:Tween(begin:0.0,end:1.0)
+				//	.animate(CurvedAnimation(
+				//		parent:animation1,
+				//		curve:Curves.fastOutSlowIn
+				//	)),
+				//	child:child,
+				//);
+				//�g��A�k��
+				//return ScaleTransistion(
+				//	scale:Tween(begin:0.0,end:1.0).animate(CurvedAnimation(
+				//		parnt:animation1,
+				//		cure:Curves.fastOutSlowI
+				//	)),
+				//	child:child,
+				//)
+				//��],�g��A�k��
+				//return RotationTransition(
+				//	turns:Tween(begin:0.0,end:1.0),
+				//	animate(CurvedAnimation(
+				//		parent:animtion1,
+				//		curve:Curves.fastOutSlowIn
+				//	)),
+				//	child:ScaleTransition(
+				//		sacle:Tween(begin:0.0, end:1.0)
+				//		.animate(CurevedAnimation(
+				//			parent:animation1,
+				//			curve:Curves.fastOutSlowIn)
+				//		)),
+				//		child:child,
+				//	),
+				//);
+				//���E�X�N���[��
+				return SlideTransition(
+					position:Tween<Offset>(
+						begin:Offset(-1.0,0.0),
+						end:Offset(0.0,0.0)
+					).animate(CurvedAnimation(
+						parent:animtion1,
+						curve:Curves.bounceOut  //elasticIn 
+					)),
+					child:child,
+			);
+		}
+	); 
+}
+
+����������
+-----
+import 'package:flutter/material.dart';
+import 'frosted_glass_demo.dart';
+
+void main()=>runApp(new MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData(
+				primarySwatch:Colors.Blue,
+			),
+			home:Scaffold(
+				body:FrostedClassDemo()
+			),
+		);
+	}
+}
+
+frosted_glass_demo.dart
+
+import 'package:flutter/material.dart';
+import 'dart:ui';
+
+class FrostedClassDemo extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:Stack(
+				children:<Widget>[
+					ConstrainedBox(
+						contraints:const BoxConstraints.expand(),
+						child: Images.network('http://aaa.png'),
+					),
+					Center(
+						child:ClipRct(
+							child: BackdropFilter(
+								filter:ImageFilter.blur(sigmaX;5.0,sigmaY:5.0),
+								child:Opacity(
+									opacity:0.5,
+									child:Container(
+										width:500.0,
+										height:700.0,
+										decoration:BoxDecoration(Color:Colrs.grey.shade200),
+										child:Center(
+											child:Text('Hello',style:Theme.of(context).textTheme.display3)
+										),
+									),
+								),
+							),
+						),
+					),
+				],
+			)
+		);
+	}
+}
+
+----
+��ʏ��ێ�
+
+main.dart
+
+import 'package:flutter/material.dart';
+import '.dart';
+
+void main()=>runApp(new MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData(
+				primarySwatch:Colors.lightBlue,
+			),
+			home:KeepAliveDemo(),
+		);
+	}
+}
+
+class KeepAliveDemo extends StatefulWidget{
+	_keepAliveDemoState createState()=>_keepAliveDemoState();
+}
+
+class _keepAliveDemoSate extends State<KeepAliveDemo> with SingleTickerProviderState{
+	TabController _controller;
+	
+	@override
+	initState(){
+		super.initState();
+		_controller = TabController(length:3,vsync:this);
+	}
+	
+	@override
+	void dispose(){
+		_controller.dispose();
+		super.dispose();
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(
+				title:text('Keep Alive Demo'),
+				bottom:TabBar(
+					controller:_controller,
+					tabs:[
+						Tab(icon:Icon(Icons.directions_car)),
+						Tab(icon:Icon(Icons.directions_transit)),
+						Tab(icon:Icon(Icons.directions_bike)),
+					],
+				),
+			),
+			body:TabBarView(
+				controller:_controller,
+				children:<Widget>[
+					Text('11'),
+					Text('22'),
+					Text('33'),
+				],
+			),
+		);
+	}
+}
+
+---
+�ێ�
+
+main.dart
+
+import 'package:flutter/material.dart';
+import 'keep_alive_demo.dart';
+
+void main()=>runApp(new MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData(
+				primarySwatch:Colors.lightBlue,
+			),
+			home:KeepAliveDemo(),
+		);
+	}
+}
+
+class KeepAliveDemo extends StatefulWidget{
+	_keepAliveDemoState createState()=>_keepAliveDemoState();
+}
+
+class _keepAliveDemoSate extends State<KeepAliveDemo> with SingleTickerProviderState{
+	TabController _controller;
+	
+	@override
+	initState(){
+		super.initState();
+		_controller = TabController(length:3,vsync:this);
+	}
+	
+	@override
+	void dispose(){
+		_controller.dispose();
+		super.dispose();
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(
+				title:text('Keep Alive Demo'),
+				bottom:TabBar(
+					controller:_controller,
+					tabs:[
+						Tab(icon:Icon(Icons.directions_car)),
+						Tab(icon:Icon(Icons.directions_transit)),
+						Tab(icon:Icon(Icons.directions_bike)),
+					],
+				),
+			),
+			body:TabBarView(
+				controller:_controller,
+				children:<Widget>[
+					//Text('11'),
+					//Text('22'),
+					//Text('33'),
+					MyHomePage(),
+					MyHomePage(),
+					MyHomePage(),
+				],
+			),
+		);
+	}
+}
+
+keep_alive_demo.dart
+import 'package:flutter/material.dart';
+
+class MyHomePage extends StatefulWidget{
+	_MyHomePageState createState()=>_MyHomePageState();
+}
+
+class _MyHomePageSate extends State<MyHomePage> with AutomaticKeepAliveCliveMixing{
+	int _counter=0;
+	
+	@override
+	bool getwantKeepAlive=>true;
+	
+	void _incrementCounter(){
+		setState((){
+			_counter++});
+	}
+
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:Center(
+				child:Clumns(
+					mainAxisAlignment:MainAxisAlignment.center,
+					children:<Widget>[
+						Text('Add dig'),
+						Text('$_counter',
+							style:Theme.of(context).textTheme.display1),
+					]
+				),
+			),
+			floatingActionButton:FloatActionButton(
+				onPressed:_incrementCounter,
+				tooltip:'Increment',
+				child:Icon(Icons.add)
+			),
+		);
+	}
+}
+
+
+----
+���������\��
+main.dart
+
+import 'package:flutter/material.dart';
+import 'search_bar_demo.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.lightBlue,
+			home:SearchBarDemo(),
+		);
+	}
+}
+
+search_bar_demo.dart
+import 'package:flutter/material.dart';
+import 'assert.dart';
+
+class SearchBarDemo extends StatefulWidget{
+	_SearchBarDemoState createState()=>_SearchBarDemoState();
+}
+
+class _SearchBarDemoSate extends State<SearchBarDemo> {
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(
+				title:Text('SearchBarDemo'),
+				actions:<Widget>[
+					IconButton(
+						icon:Icon(Icons.search),
+						onPressed:(){
+							//print('Clicked');
+							showSearch(context:context,delegate:searchBarDelegate());
+						}
+					)
+				]
+			)
+		)
+	}
+
+}
+
+class searchBarDelegate extends SearchDelegate<String>{
+	@override
+	List <Widget> buildActions(BuildContext context){
+		return [
+			IconButton(
+				icon:Icon(Icons.clear),
+				onPressed:()=>query = "",
+			),
+		],
+	};
+	
+	@overide
+	Widget buildLeading(BuildContext context){
+		return IconButton(
+			icon:AnimatedIcon(
+				icon:AnimatedIcons.menu_arrow,
+				progress:transitionAnimation
+			),
+			Onpressed:()->close(context,null),
+		);
+	}
+	
+	@override
+	Widget buildResults(BuildContext context){
+		return Container(
+			width:100.0,
+			height:100.0,
+			child:Card(
+				color:Colors.reAccent,
+				child:Center(
+					child:Text(query),
+				),
+			),
+		);
+	}
+	
+	@override
+	Widget Suggestions(BuildContext context){
+		final suggestionList = query.isEmpty
+			? recentSuggest
+			:searchList.where((input)=>input.startsWith(query).toList());
+			
+		return listView.builder(
+			itemCount:suggestionList.length,
+			itembuilder(context,index)=>ListTile(
+				title:RichText(
+					text:TextSpan(
+						text:suggestionList[index].ubstring(0,query.length),
+						style:TextStyle(
+							color:Colors.black,fontWeight:FontWeight.bold
+						),
+						children:[
+							TextSpan(
+								text:suggestionList[index].substring(query.length),
+								style:TextStyle(color:Colors.grey)
+							)
+						]
+					)
+				)
+			)
+		);
+	}
+	
+}
+
+
+assert.dart
+const searchList=[
+	"jiejie-A",
+	"jiejie-B",
+	"gege-A",
+	"gege-B",
+];
+
+const recentSuggest=[
+	"A",
+	"B"
+];
+
+---
+wrap
+
+main.dart
+
+import 'package:flutter/material.dart';
+import 'warp_demo.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.lightBlue,
+			home:WarpDemo(),
+		);
+	}
+}
+
+warp_demo.dart
+
+import 'package:flutter/material.dart';
+
+class WarpDemo extends StatefulWidget{
+	_WarpDemoState createState()=>_WarpDemoState();
+}
+
+class _WarpDemoSate extends State<WarpDemo> {
+	List <Widget> list;
+	@override
+	initState(){
+		super.initState();
+		list = List<Wiget>()..add(buildAddButton());
+	}
+	
+	
+	@override
+	Widget build(BuildContext context){
+		final width = MidiaQeury.of(context).size.width;
+		
+		final height = MidiaQeury.of(context).size.height;
+		
+		return Scaffold{
+			//Container(
+			//child:child
+			apBar:AppBar(
+				title:Text('Wrap'),
+			),
+			body:Center(
+				child:Opacity(
+					opacity:0.8,
+					child:Contaner(
+						width:width,
+						height:height/2,
+						color:Colors.grey,
+						child:Wrap(
+							children:list,
+							spacing:26.0
+						)
+					)
+				)
+			)
+		),
+	};
+	
+	Widget buildAddButton(){
+		retrn GestureDetector(
+			onTap:(){
+				if(list.length<9){
+					setState((){
+						list.insert(this.length-1,buldPhoto());
+					});
+				}
+			},
+			child:Padding(
+				padding:const EdgeInsets.all(8.0),
+				child:Container(
+					Width:80.0,
+					Height:80.0,
+					color:Colors.black54,
+					child:Icons(Icons.add),
+				)
+			)
+			
+		);
+	}
+	
+	Widget buildPhoto(){
+		return Padding(
+			padding:const EdgeInsets.all(8.0),
+			child:Container(
+				width:80.0,
+				height:80.0,
+				color:Colors.amber,
+				child:Center(child:text('Png'))
+			),
+		);
+	}
+
+}
+
+-------
+awsome
+�W�J
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'expansion_tile.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.dark(),
+			home:ExpansionTileDemo(),
+		);
+	}
+}
+
+
+expansion_tile.dart
+
+import 'package:flutter/material.dart';
+
+class ExpansionTileDemo extends StatefulWidget{
+	_ExpansionTileDemoState createState()=>_ExpansionTileDemoState();
+}
+
+class _ExpansionTileDemoSate extends State<ExpansionTileDemo> {
+	
+	final _BottomNavigationColor = COlors.blue;
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(    //��`
+			appBar:AppBar(
+				title:Text('Expansion Tile Demo'),
+				body:Ceneter(
+					child:ExpansionTile(
+						tile:Text('Expansion Tile'),
+						leading:Icons(Icons.ac_unit),
+						backGroundColor:Colors.white12,
+						children:<Widget>[
+							ListTile(
+								title:Text(list tile),
+								subtitle:Text('sub'),
+							),
+						],
+					),
+					initiallyExpanded:true,
+				),
+			)
+		)
+	}
+}
+
+-------
+�W�J��List
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'expansion_tile.dart';
+import 'expansion_panel_list.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.dark(),
+			//home:ExpansionTileDemo(),
+			home:ExpansionPanelList(),
+		);
+	}
+}
+
+expansion_tile.dart
+
+import 'package:flutter/material.dart';
+
+class ExpansionTileDemo extends StatefulWidget{
+	_ExpansionTileDemoState createState()=>_ExpansionTileDemoState();
+}
+
+class _ExpansionTileDemoSate extends State<ExpansionTileDemo> {
+	
+	final _BottomNavigationColor = COlors.blue;
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(    //��`
+			appBar:AppBar(
+				title:Text('Expansion Tile Demo'),
+				body:Ceneter(
+					child:ExpansionTile(
+						tile:Text('Expansion Tile'),
+						leading:Icons(Icons.ac_unit),
+						backGroundColor:Colors.white12,
+						children:<Widget>[
+							ListTile(
+								title:Text(list tile),
+								subtitle:Text('sub'),
+							),
+						],
+					),
+					initiallyExpanded:true,
+				),
+			)
+		)
+	}
+}
+
+expansion_panel_list.dart
+
+import 'package:flutter/material.dart';
+
+class ExpansionPanelListDemo extends StatefulWidget{
+	_ExpansionPanelListDemoState createState()=>_ExpansionPanelListDemoState();
+}
+
+class _ExpansionPanelListDemoSate extends State<ExpansionPanelListDemo> {
+	
+	List<int> mList;
+	List<ExpandSateBean> expandStateList;
+	
+	_ExpansionPanelListDemoSate(){
+		mList = new List();
+		ExpandSateList = new List();
+		for (int i=0;i<10;i++){
+			mList.add(i);
+			expandStateList.add(ExpandStateBean(i,false));
+		}
+	}
+	
+	_setCurrentInex(int index,isExpand){
+		setState((){
+			expandStateList.forEach((item){
+				if (item.index==index){
+					item.isOpen=!isExpand;
+				}
+			}
+		});
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(    //��`
+			appBar:AppBar(
+				title:Text('Expansion Tile Demo'),
+			),
+			body:SingleChildScrollView(
+				child:ExpansionPanelList(
+					expansionCallback:(index,bol){
+						_setCurrntIndex(index,bol);
+					},
+					children:mList.map((index){
+						return ExpansionPanel(
+							headerBuilder:(context,isExpanded){
+								return ListTile(
+									title:Text('this is No.$index')
+								);
+							},
+							body :ListTile(
+								title:Text('expansion no.$index'),
+							),
+							isExpanded:expandStateList[index].isOpen,
+						);
+					}).toList(),
+				),
+			),
+		)
+	}
+}
+
+class ExpandSateBean{
+	var isOpen;
+	var index;
+	ExpandStateBean(this.index,this.isOpen);
+}
+
+---
+PNG�Ȑ�
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'custom_clipper.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			debugShowCheckedModeBanner:false,
+			theme:ThemeData(
+				primarySwatch:Colors.blue(),
+			}
+			home:HomePage(),
+		);
+	}
+}
+
+custom_clipper.dart
+
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget{
+	_HomePageState createState()=>_HomePageState();
+}
+
+class _HomePageSate extends State<HomePage> {
+
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(    //��`
+			body:Column(
+				children:<Widget>[
+					ClipPath(
+						clipper:BottomClipper(),
+						child:Container(
+							color:Colors.deepPurpleAccent,
+							height:200.0,
+						),
+					)
+				]
+			),
+		)
+	}
+}
+
+class BottomClipper extends Customerlipper<Path>{
+	@override
+	Path getClip(Size size){
+		var path = Path();
+		path.lineTo(0,0);
+		path.lineTo(0,size.height-30);
+		var firstControlPoint = Offset(size.width/2,size.height);
+		var firstEndPoint = Offset(size.width,size.height-30);
+		path.quadraticBezierTo(
+			firstControlPoint.dx,
+			firstControlPoint.dy,
+			firstEndPoint.dx,
+			firstEndPoint.dy
+		);
+		path.lineTo(size.width,size.height-30);
+		path.lineTo(size.wdth,0);
+		return path;
+	}
+	
+	@override
+	boold shouldReclip(CustomClipper<Path> oldClipper){
+		return false;
+	}
+}
+
+
+-----
+�g��
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'custom_clipper.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			debugShowCheckedModeBanner:false,
+			theme:ThemeData(
+				primarySwatch:Colors.blue(),
+			}
+			home:HomePage(),
+		);
+	}
+}
+
+custom_clipper.dart
+
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget{
+	_HomePageState createState()=>_HomePageState();
+}
+
+class _HomePageSate extends State<HomePage> {
+
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(    //��`
+
+			body:Column(
+				children:<Widget>[
+					ClipPath(
+						clipper:BottomClipperTest(),
+						child:Container(
+							color:Colors.deepPurpleAccent,
+							height:200.0,
+						),
+					)
+				]
+			),
+		)
+	}
+}
+
+class BottomClipperTest extends Customerlipper<Path>{
+	@override
+	Path getClip(Size size){
+		var path = Path();
+		path.lineTo(0,0);
+		path.lineTo(0,size.height-40);
+		
+		var firstControlPoint = Offset(size.width/4, size.height);
+		var firstEndPoint = Offset(size.width/2.25, size.height - 30);
+		path.quadraticBezierTo(
+			firstControlPoint.dx,
+			firstControlPoint.dy,
+			firstEndPoint.dx,
+			firstEndPoint.dy
+		);
+		
+		var secondControlPoint = Offset(size.width/4*3, size.height-90);
+		var secondEndPoint = Offset(size.width, size.height - 40);
+		path.quadraticBezierTo(
+			secondControlPoint.dx,
+			secondControlPoint.dy,
+			secondEndPoint.dx,
+			secondEndPoint.dy
+		);
+		
+		path.lineTo(size.width, size.height - 40);
+		path.lineTo(size.wdth,0);
+		return path;
+	}
+	
+	@override
+	boold shouldReclip(CustomClipper<Path> oldClipper){
+		return false;
+	}
+}
+
+---
+flash animation
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'splash_screen.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			debugShowCheckedModeBanner:false,
+			theme:ThemeData(
+				primarySwatch:Colors.blue(),
+			}
+			home:SplashScreen(),
+		);
+	}
+}
+
+splash_screen.dart
+
+import 'package:flutter/material.dart';
+import 'package:home_page.dart';
+
+class SplashScreen extends StatefulWidget{
+	_SplashScreenState createState()=>_SplashScreenState();
+}
+
+class _SplashScreenSate extends State<SplashScreen> with SingleTickerProvider{
+	AnimationController _controller;
+	Animation _animation;
+	
+	@override
+	void initState(){
+		super.initState();
+		_controller=AnimationController(vsync: this,duration:Duration(millisconds:3000));
+		_animation = Tween(begin:0.0,end:1.0).animate(_controller);
+		_animation.addListener((status){
+			if (status == animationStatus.completed){
+				Navigator.of(context).pushAndRemoveUntil(
+					MaterialPageRote(builder:(context)=>MyHomePage()),
+					(route)=>route==null
+					);
+			}
+		});
+		_controller.forward();
+		
+	}
+	
+	@override
+	void dispose(){
+		_controller.dispose();
+		super.dispose();
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return FadeTransition(    
+			opacity:_animation,
+			child:Image.network('http://aaa.com/aa.png'),
+			scale:2.0,
+			fit:BoxFit.cover,
+		);
+	)
+}
+
+
+home_page.dart
+
+
+import 'package:flutter/material.dart';
+
+class MyHomePage extends StatelessWidget{
+
+	@overide
+	Widget build(Buildcontext context){
+	return Scaffold(
+		appBar:AppBar(title:Text('Home')),
+		body:Center(child:Text('Home'),)
+	);
+}
+
+
+----
+�E�ɃX���[�h
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'right_back_demo.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			debugShowCheckedModeBanner:false,
+			theme:ThemeData(
+				primarySwatch:Colors.blue(),
+			}
+			home:RightBackDemo(),
+		);
+	}
+}
+
+
+right_back_demo.dart
+
+import 'package:flutter/cupertino.dart';
+
+class RightBackDemo extends StatelessWidget{
+	
+	@override
+	Widget build(BuildContext context){
+		return CupertinoPageScaffold(    
+			child:Container(
+				height:100.0,
+				width:100.0,
+				color:CupertinoColors.activeBlue
+				child:CupertinoButton(
+					child:Icon(CupertinoIcons.add,
+					onPressed:(){
+						Navigator.of(context).push(
+							CupertinoPageRoute(builder:(BuildContext ontext){
+								return RightBackDemo();
+							})
+						);
+					}
+				),
+			),
+		);
+	)
+}
+
+
+----
+���b�Z�[�W�\��
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'too_tips_demo.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.light(),
+			home:ToolTipDemo(),
+		);
+	}
+}
+
+too_tips_demo.dart
+import 'package:flutter/material.dart';
+
+class ToolTipDemo extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text('tool tips demo')),
+			body:Center(
+				child:Tooltip(
+					message:'not touch',
+					child:Image.network('http://aaa.com/aaa.png'),
+				)
+			),
+		);
+	}
+}
+
+
+
+----
+drag
+
+main.dart
+
+import 'package:flutter/material.dart';
+
+import 'too_tips_demo.dart';
+
+void main()=>runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return MaterialApp(
+			title:'Futter Demo',
+			theme:ThemeData.light(),
+			home:DraggableDemo(),
+		);
+	}
+}
+
+draggable_demo.dart
+import 'package:flutter/material.dart';
+import 'draggable_demo.dart';
+
+class Draggable extends StatefulWidget{
+	_DraggableState createState()=>_DraggableState();
+}
+
+class _DraggableSate extends State<SplashScreen>{
+	Colo _draggableColor = Colors.grey;
+	Animation _animation;
+	
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:Stack(
+				children:<Widget>[
+					DraggableWidget(
+						offset:Offset(80.0,80.0),
+						widgetColor:Colors.tealAccent,
+					),
+					DraggableWidget(
+						offset:Offset(180.0,80.0),
+						widgetColor:Colors.redAccent,
+					),
+					Ceneter(
+						child:DragTarget(
+							onAccept:(Color color){
+								_draggaleColor=colr;
+							},builder:(context,candidateData,rejectedData){
+								return Container(
+									width:200.0,
+									height:200.0,
+									color:_draggableColor,
+								);
+							}
+						),
+					)
+				]
+			)    
+		);
+	)
+}
+
+
+
+
+
+
+
+
+draggable_demo.dart
+import 'package:flutter/material.dart';
+
+class ToolTipDemo extends StatelessWidget{
+
+
+draggable_widget.dart
+import 'package:flutter/material.dart';
+
+
+
+class DraggableWidget extends StatefulWidget{
+	final Offset offset;
+	final Color widgetColor;
+	const DraggbleWidget({Key key,this.offset,this.widgetColor}):super(key:key);
+	
+	_DraggableWidgetState createState()=>_DraggableWidgetState();
+}
+
+class _DraggableWidgetSate extends State<DraggableWidget>{
+	Offset offset=Offset(0.0, 0.0);
+	
+	@override
+	void initState(){
+		super.initState();
+		
+		offset=widget.offset;
+	}
+	
+	@override
+	void dispose(){
+		_controller.dispose();
+		super.dispose();
+	}
+	
+	@override
+	Widget build(BuildContext context){
+		return Positioned(    
+			left:offset.dx,
+			top.offset.dy,
+			child:Draggable(
+				data:widget.widetColor,
+				child:Container(
+					width:00.0,
+					height:100.0,
+					color:widget.widgetColor,
+				),
+				feedback:Container(
+					width:100.0,
+					height:100.0,
+					color:widget.widgetColor.wthOpacity(e.5),
+				),
+				OnDraggableCanceled:(Velocity velocity,Offset offset){
+					setState((){
+						this.offset = offset;
+					});
+				},
+			),
+		);
+	)
+}
+
+

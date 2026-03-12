@@ -1,0 +1,894 @@
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  888-st-taio
+* 999-st-taio
+  checkout
+  master
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -D checkout
+Deleted branch checkout (was 8bd0a1f).
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  888-st-taio
+* 999-st-taio
+  master
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ vim dell/999.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git add dell/999.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git commit -m "pull request"
+[999-st-taio 129e13e] pull request
+ 1 file changed, 1 insertion(+)
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git push origin 999-st-taio
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 444 bytes | 40.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ycntokyo/master.git
+   5f76346..129e13e  999-st-taio -> 999-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git log --all --graph --decorate --oneline
+* 129e13e (HEAD -> 999-st-taio, origin/999-st-taio) pull request
+* b829e01 (origin/master, origin/HEAD) last
+*   13fba04 (888-st-taio) not conflict 888 & 999
+|\
+| * 5f76346 branch merge from 999
+* | d3b9b3b (origin/888-st-taio) branch merge test
+* |   8e4b937 conflict
+|\ \
+| * | bf3fae2 test
+| * |   1639bd9 test
+| |\ \
+| | * \   5ec8283 test
+| | |\ \
+| | | * \   f030f02 Merge branch 'master' of https://github.com/ycntokyo/master into HEAD
+| | | |\ \
+| | | | * | 3ed1c1a comflict allright
+| | | | |\|
+| | | | | * 1e4f1c4 from 999
+| | * | | | 58a2203 test
+| | |/ / /
+| | * / / 6d99cc0 from 999
+| | |/ /
+| | * / b63773d from 888
+| | |/
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -v
+  888-st-taio 13fba04 [behind 1] not conflict 888 & 999
+* 999-st-taio 129e13e pull request
+  master      a29ce4d [behind 37] commit
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  888-st-taio
+* 999-st-taio
+  master
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  888-st-taio
+* 999-st-taio
+  master
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -v
+  888-st-taio 13fba04 [behind 1] not conflict 888 & 999
+* 999-st-taio 129e13e pull request
+  master      a29ce4d [behind 37] commit
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git checkout -b release-st
+Switched to a new branch 'release-st'
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git branch -v
+  888-st-taio 13fba04 [behind 1] not conflict 888 & 999
+  999-st-taio 129e13e pull request
+  master      a29ce4d [behind 37] commit
+* release-st  129e13e pull request
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git checkout -b release-join
+Switched to a new branch 'release-join'
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-join)
+$ git branch -v
+  888-st-taio  13fba04 [behind 1] not conflict 888 & 999
+  999-st-taio  129e13e pull request
+  master       a29ce4d [behind 37] commit
+* release-join 129e13e pull request
+  release-st   129e13e pull request
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-join)
+$ git branch -a
+  888-st-taio
+  999-st-taio
+  master
+* release-join
+  release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-join)
+$ git push -u origin release-join
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'release-join' on GitHub by visiting:
+remote:      https://github.com/ycntokyo/master/pull/new/release-join
+remote:
+To https://github.com/ycntokyo/master.git
+ * [new branch]      release-join -> release-join
+Branch 'release-join' set up to track remote branch 'release-join' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-join)
+$ git checkout release-st
+Switched to branch 'release-st'
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git branch -a
+  888-st-taio
+  999-st-taio
+  master
+  release-join
+* release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git push -u release-st
+fatal: 'release-st' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git push -u origin release-st
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'release-st' on GitHub by visiting:
+remote:      https://github.com/ycntokyo/master/pull/new/release-st
+remote:
+To https://github.com/ycntokyo/master.git
+ * [new branch]      release-st -> release-st
+Branch 'release-st' set up to track remote branch 'release-st' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git branch -a
+  888-st-taio
+  999-st-taio
+  master
+  release-join
+* release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git checkout -b 123-st-taio origin/release-st
+Switched to a new branch '123-st-taio'
+Branch '123-st-taio' set up to track remote branch 'release-st' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ vim dell/999.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -a
+* 123-st-taio
+  888-st-taio
+  999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D 888-st-taio
+Deleted branch 888-st-taio (was 13fba04).
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D 999-st-taio
+Deleted branch 999-st-taio (was 129e13e).
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -a
+* 123-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git add dell/999.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git commit -m "123-st-taioにコミット"
+[123-st-taio cb31b7e] 123-st-taio縺ｫ繧ｳ繝溘ャ繝・ 1 file changed, 1 insertion(+)
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:release-st
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push -u origin 123-st-taio
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 570 bytes | 38.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for '123-st-taio' on GitHub by visiting:
+remote:      https://github.com/ycntokyo/master/pull/new/123-st-taio
+remote:
+To https://github.com/ycntokyo/master.git
+ * [new branch]      123-st-taio -> 123-st-taio
+Branch '123-st-taio' set up to track remote branch '123-st-taio' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -a
+* 123-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D origin 888-st-taio
+error: branch 'origin' not found.
+error: branch '888-st-taio' not found.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D origin/888-st-taio
+error: branch 'origin/888-st-taio' not found.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D remotes/origin/888-st-taio
+error: branch 'remotes/origin/888-st-taio' not found.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -D origin 888-st-taio
+error: branch 'origin' not found.
+error: branch '888-st-taio' not found.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push origin 888-st-taio
+error: src refspec 888-st-taio does not match any
+error: failed to push some refs to 'https://github.com/ycntokyo/master.git'
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -a
+* 123-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push origin :888-st-taio
+To https://github.com/ycntokyo/master.git
+ - [deleted]         888-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ vim dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git add dell/gitcommand.txt
+warning: LF will be replaced by CRLF in dell/gitcommand.txt.
+The file will have its original line endings in your working directory
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git commit -m "ブランチの削除"
+[123-st-taio 956d01d] 繝悶Λ繝ｳ繝√・蜑企勁
+ 1 file changed, 19 insertions(+)
+ create mode 100644 dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 524 bytes | 43.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ycntokyo/master.git
+   cb31b7e..956d01d  123-st-taio -> 123-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push origin HEAD:release-st
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ycntokyo/master.git
+   129e13e..956d01d  HEAD -> release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push origin :999-st-taio
+To https://github.com/ycntokyo/master.git
+ - [deleted]         999-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git branch -a
+* 123-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ vi dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git commit -m "修正"
+On branch 123-st-taio
+Your branch is up to date with 'origin/123-st-taio'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dell/gitcommand.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git add dell/gitcommand.txt
+warning: LF will be replaced by CRLF in dell/gitcommand.txt.
+The file will have its original line endings in your working directory
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git commit -m "修正"
+[123-st-taio 4657ec0] 菫ｮ豁｣
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git push origin HEAD:123-st-taio
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 463 bytes | 51.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/ycntokyo/master.git
+   956d01d..4657ec0  HEAD -> 123-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git checkout 888-st-taio -b origin release-st
+fatal: Cannot update paths and switch to branch 'origin' at the same time.
+
+YCN@workpc MINGW64 /c/work/worksource/master (123-st-taio)
+$ git checkout -b 888-st-taio origin/release-st
+Switched to a new branch '888-st-taio'
+Branch '888-st-taio' set up to track remote branch 'release-st' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (888-st-taio)
+$ git checkout -b 999-st-taio origin release-st
+fatal: 'release-st' is not a commit and a branch '999-st-taio' cannot be created from it
+
+YCN@workpc MINGW64 /c/work/worksource/master (888-st-taio)
+$ git checkout -b 999-st-taio origin/release-st
+Switched to a new branch '999-st-taio'
+Branch '999-st-taio' set up to track remote branch 'release-st' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  123-st-taio
+  888-st-taio
+* 999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ vim dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git add dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git push -u origin 999-st-taio
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for '999-st-taio' on GitHub by visiting:
+remote:      https://github.com/ycntokyo/master/pull/new/999-st-taio
+remote:
+To https://github.com/ycntokyo/master.git
+ * [new branch]      999-st-taio -> 999-st-taio
+Branch '999-st-taio' set up to track remote branch '999-st-taio' from 'origin'.
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  123-st-taio
+  888-st-taio
+* 999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git merge origin 123-st-taio
+error: Your local changes to the following files would be overwritten by merge:
+        dell/gitcommand.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 956d01d..4657ec0
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git commit -m "999-st-taio変更"
+[999-st-taio 456270d] 999-st-taio螟画峩
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git merge origin 123-st-taio
+Auto-merging dell/gitcommand.txt
+CONFLICT (content): Merge conflict in dell/gitcommand.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio|MERGING)
+$ vi dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio|MERGING)
+$ git add dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio|MERGING)
+$ git commit -m "Conflict解除"
+[999-st-taio ab25e2c] Conflict隗｣髯､
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git merge --continue
+fatal: There is no merge in progress (MERGE_HEAD missing).
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git merge origin 123-st-taio
+Already up to date.
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 831 bytes | 59.00 KiB/s, done.
+Total 8 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+To https://github.com/ycntokyo/master.git
+   956d01d..ab25e2c  999-st-taio -> 999-st-taio
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git merge origin 123-st-taio
+Already up to date.
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ vi dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git branch -a
+  123-st-taio
+  888-st-taio
+* 999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git push origin HEAD:release-st
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ycntokyo/master.git
+   956d01d..ab25e2c  HEAD -> release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ vim dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git add dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git commit -m "修正"
+[999-st-taio 12ea8b8] 菫ｮ豁｣
+ 1 file changed, 59 insertions(+)
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git push origin HEAD:release-st
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 920 bytes | 76.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ycntokyo/master.git
+   ab25e2c..12ea8b8  HEAD -> release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (999-st-taio)
+$ git checkout release-st
+Switched to branch 'release-st'
+Your branch is behind 'origin/release-st' by 6 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git branch -a
+  123-st-taio
+  888-st-taio
+  999-st-taio
+  master
+  release-join
+* release-st
+  remotes/origin/123-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git push origin HEAD:master
+To https://github.com/ycntokyo/master.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ycntokyo/master.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git pull origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 619 bytes | 12.00 KiB/s, done.
+From https://github.com/ycntokyo/master
+ * branch            master     -> FETCH_HEAD
+   b829e01..5805782  master     -> origin/master
+Updating 129e13e..5805782
+Fast-forward
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git push origin HEAD:master
+Everything up-to-date
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git branch -a
+  123-st-taio
+  888-st-taio
+  999-st-taio
+  master
+  release-join
+* release-st
+  remotes/origin/123-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git push origin HEAD:master
+Everything up-to-date
+
+YCN@workpc MINGW64 /c/work/worksource/master (release-st)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 39 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+YCN@workpc MINGW64 /c/work/worksource/master (master)
+$ git merge origin release-st
+Updating files: 100% (83/83), done.
+Updating a29ce4d..5805782
+Fast-forward
+ .DS_Store                                     |   Bin 0 -> 8196 bytes
+ deeplearning/.DS_Store                        |   Bin 0 -> 10244 bytes
+ deeplearning/__pycache__/keras.cpython-37.pyc |   Bin 0 -> 958 bytes
+ deeplearning/calc.py                          |    67 +
+ deeplearning/chart_001.png                    |   Bin 0 -> 48868 bytes
+ deeplearning/chart_variable.png               |   Bin 0 -> 134993 bytes
+ deeplearning/gozoninshiki.py                  |   162 +
+ deeplearning/gradient.py                      |    33 +
+ deeplearning/hoshi/.DS_Store                  |   Bin 0 -> 6148 bytes
+ deeplearning/hoshi/0.png                      |   Bin 0 -> 342 bytes
+ deeplearning/hoshi/1.png                      |   Bin 0 -> 333 bytes
+ deeplearning/hoshi/2.png                      |   Bin 0 -> 334 bytes
+ deeplearning/hoshi/3.png                      |   Bin 0 -> 341 bytes
+ deeplearning/hoshi/4.png                      |   Bin 0 -> 345 bytes
+ deeplearning/hoshi/5.png                      |   Bin 0 -> 350 bytes
+ deeplearning/hoshi/6.png                      |   Bin 0 -> 341 bytes
+ deeplearning/hoshi/7.png                      |   Bin 0 -> 340 bytes
+ deeplearning/hoshi/8.png                      |   Bin 0 -> 357 bytes
+ deeplearning/hoshi/9.png                      |   Bin 0 -> 337 bytes
+ deeplearning/kerassample.py                   |    86 +
+ deeplearning/kerassample1.py                  |    76 +
+ deeplearning/kerassample2.py                  |    76 +
+ deeplearning/kerussample2.py                  |   198 +
+ deeplearning/koubaihou.py                     |   210 +
+ deeplearning/kousakyaten.py                   |   171 +
+ deeplearning/learning1.py                     |   148 +
+ deeplearning/maru/.DS_Store                   |   Bin 0 -> 6148 bytes
+ deeplearning/maru/0.png                       |   Bin 0 -> 278 bytes
+ deeplearning/maru/1.png                       |   Bin 0 -> 277 bytes
+ deeplearning/maru/2.png                       |   Bin 0 -> 279 bytes
+ deeplearning/maru/3.png                       |   Bin 0 -> 247 bytes
+ deeplearning/maru/4.png                       |   Bin 0 -> 292 bytes
+ deeplearning/maru/5.png                       |   Bin 0 -> 250 bytes
+ deeplearning/maru/6.png                       |   Bin 0 -> 270 bytes
+ deeplearning/maru/7.png                       |   Bin 0 -> 267 bytes
+ deeplearning/maru/8.png                       |   Bin 0 -> 262 bytes
+ deeplearning/maru/9.png                       |   Bin 0 -> 254 bytes
+ deeplearning/mibun.py                         |    33 +
+ deeplearning/orandxorsamp.py                  |   118 +
+ deeplearning/predict_result.png               |   Bin 0 -> 30159 bytes
+ deeplearning/sample1.py                       |     9 +
+ deeplearning/sankaku/.DS_Store                |   Bin 0 -> 6148 bytes
+ deeplearning/sankaku/0.png                    |   Bin 0 -> 266 bytes
+ deeplearning/sankaku/1.png                    |   Bin 0 -> 240 bytes
+ deeplearning/sankaku/2.png                    |   Bin 0 -> 250 bytes
+ deeplearning/sankaku/3.png                    |   Bin 0 -> 259 bytes
+ deeplearning/sankaku/4.png                    |   Bin 0 -> 259 bytes
+ deeplearning/sankaku/5.png                    |   Bin 0 -> 275 bytes
+ deeplearning/sankaku/6.png                    |   Bin 0 -> 290 bytes
+ deeplearning/sankaku/7.png                    |   Bin 0 -> 271 bytes
+ deeplearning/sankaku/8.png                    |   Bin 0 -> 282 bytes
+ deeplearning/sankaku/9.png                    |   Bin 0 -> 266 bytes
+ deeplearning/savetest.py                      |    10 +
+ deeplearning/shikaku/.DS_Store                |   Bin 0 -> 6148 bytes
+ deeplearning/shikaku/0.png                    |   Bin 0 -> 207 bytes
+ deeplearning/shikaku/1.png                    |   Bin 0 -> 202 bytes
+ deeplearning/shikaku/2.png                    |   Bin 0 -> 209 bytes
+ deeplearning/shikaku/3.png                    |   Bin 0 -> 219 bytes
+ deeplearning/shikaku/4.png                    |   Bin 0 -> 215 bytes
+ deeplearning/shikaku/5.png                    |   Bin 0 -> 205 bytes
+ deeplearning/shikaku/6.png                    |   Bin 0 -> 213 bytes
+ deeplearning/shikaku/7.png                    |   Bin 0 -> 205 bytes
+ deeplearning/shikaku/8.png                    |   Bin 0 -> 198 bytes
+ deeplearning/shikaku/9.png                    |   Bin 0 -> 216 bytes
+ deeplearning/softmapfuc1.py                   |    36 +
+ deeplearning/stock.py                         |   160 +
+ deeplearning/test.png                         |   Bin 0 -> 11341 bytes
+ deeplearning/test/.DS_Store                   |   Bin 0 -> 6148 bytes
+ deeplearning/test/0.png                       |   Bin 0 -> 286 bytes
+ deeplearning/test/1.png                       |   Bin 0 -> 269 bytes
+ deeplearning/test/2.png                       |   Bin 0 -> 190 bytes
+ deeplearning/test/3.png                       |   Bin 0 -> 349 bytes
+ deeplearning/testai.py                        |    76 +
+ deeplearning/toyota_stock.csv                 |    27 +
+ deeplearning/weights.hdf5                     |   Bin 0 -> 51950200 bytes
+ dell/999.txt                                  |    11 +
+ dell/addnew.txt                               |     1 +
+ dell/gitcommandlog.txt                        | 10611 ++++++++++++++++++++++++
+ dell/test.txt                                 |     2 +
+ mibun/study1.py                               |    28 +
+ mibun/study2.py                               |    41 +
+ mibun/study3.py                               |    48 +
+ test.py                                       |     8 +-
+ 83 files changed, 12444 insertions(+), 2 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 deeplearning/.DS_Store
+ create mode 100644 deeplearning/__pycache__/keras.cpython-37.pyc
+ create mode 100755 deeplearning/calc.py
+ create mode 100644 deeplearning/chart_001.png
+ create mode 100644 deeplearning/chart_variable.png
+ create mode 100755 deeplearning/gozoninshiki.py
+ create mode 100755 deeplearning/gradient.py
+ create mode 100644 deeplearning/hoshi/.DS_Store
+ create mode 100755 deeplearning/hoshi/0.png
+ create mode 100755 deeplearning/hoshi/1.png
+ create mode 100755 deeplearning/hoshi/2.png
+ create mode 100755 deeplearning/hoshi/3.png
+ create mode 100755 deeplearning/hoshi/4.png
+ create mode 100755 deeplearning/hoshi/5.png
+ create mode 100755 deeplearning/hoshi/6.png
+ create mode 100755 deeplearning/hoshi/7.png
+ create mode 100755 deeplearning/hoshi/8.png
+ create mode 100755 deeplearning/hoshi/9.png
+ create mode 100755 deeplearning/kerassample.py
+ create mode 100644 deeplearning/kerassample1.py
+ create mode 100644 deeplearning/kerassample2.py
+ create mode 100755 deeplearning/kerussample2.py
+ create mode 100755 deeplearning/koubaihou.py
+ create mode 100755 deeplearning/kousakyaten.py
+ create mode 100755 deeplearning/learning1.py
+ create mode 100644 deeplearning/maru/.DS_Store
+ create mode 100755 deeplearning/maru/0.png
+ create mode 100755 deeplearning/maru/1.png
+ create mode 100755 deeplearning/maru/2.png
+ create mode 100755 deeplearning/maru/3.png
+ create mode 100755 deeplearning/maru/4.png
+ create mode 100755 deeplearning/maru/5.png
+ create mode 100755 deeplearning/maru/6.png
+ create mode 100755 deeplearning/maru/7.png
+ create mode 100755 deeplearning/maru/8.png
+ create mode 100755 deeplearning/maru/9.png
+ create mode 100755 deeplearning/mibun.py
+ create mode 100755 deeplearning/orandxorsamp.py
+ create mode 100644 deeplearning/predict_result.png
+ create mode 100644 deeplearning/sample1.py
+ create mode 100644 deeplearning/sankaku/.DS_Store
+ create mode 100755 deeplearning/sankaku/0.png
+ create mode 100755 deeplearning/sankaku/1.png
+ create mode 100755 deeplearning/sankaku/2.png
+ create mode 100755 deeplearning/sankaku/3.png
+ create mode 100755 deeplearning/sankaku/4.png
+ create mode 100755 deeplearning/sankaku/5.png
+ create mode 100755 deeplearning/sankaku/6.png
+ create mode 100755 deeplearning/sankaku/7.png
+ create mode 100755 deeplearning/sankaku/8.png
+ create mode 100755 deeplearning/sankaku/9.png
+ create mode 100644 deeplearning/savetest.py
+ create mode 100644 deeplearning/shikaku/.DS_Store
+ create mode 100755 deeplearning/shikaku/0.png
+ create mode 100755 deeplearning/shikaku/1.png
+ create mode 100755 deeplearning/shikaku/2.png
+ create mode 100755 deeplearning/shikaku/3.png
+ create mode 100755 deeplearning/shikaku/4.png
+ create mode 100755 deeplearning/shikaku/5.png
+ create mode 100755 deeplearning/shikaku/6.png
+ create mode 100755 deeplearning/shikaku/7.png
+ create mode 100755 deeplearning/shikaku/8.png
+ create mode 100755 deeplearning/shikaku/9.png
+ create mode 100755 deeplearning/softmapfuc1.py
+ create mode 100755 deeplearning/stock.py
+ create mode 100644 deeplearning/test.png
+ create mode 100644 deeplearning/test/.DS_Store
+ create mode 100755 deeplearning/test/0.png
+ create mode 100755 deeplearning/test/1.png
+ create mode 100755 deeplearning/test/2.png
+ create mode 100755 deeplearning/test/3.png
+ create mode 100644 deeplearning/testai.py
+ create mode 100644 deeplearning/toyota_stock.csv
+ create mode 100644 deeplearning/weights.hdf5
+ create mode 100644 dell/999.txt
+ create mode 100644 dell/addnew.txt
+ create mode 100644 dell/gitcommandlog.txt
+ create mode 100644 dell/test.txt
+ create mode 100755 mibun/study1.py
+ create mode 100755 mibun/study2.py
+ create mode 100755 mibun/study3.py
+
+YCN@workpc MINGW64 /c/work/worksource/master (master)
+$ cd dell
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (master)
+$ ls
+999.txt  addnew.txt  gitcommandlog.txt  test.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (master)
+$ git chekout release-st
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (master)
+$ git checkout release-st
+Switched to branch 'release-st'
+Your branch and 'origin/release-st' have diverged,
+and have 1 and 6 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ git pull
+Merge made by the 'recursive' strategy.
+ dell/999.txt        |  1 +
+ dell/gitcommand.txt | 95 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 96 insertions(+)
+ create mode 100644 dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ vi dell/gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ ls dell/*
+ls: cannot access 'dell/*': No such file or directory
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ ls
+999.txt  addnew.txt  gitcommand.txt  gitcommandlog.txt  test.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ vi gitcommand.txt
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$ git push origin HEAD:master
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 253 bytes | 36.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ycntokyo/master.git
+   5805782..75bcc8c  HEAD -> master
+
+YCN@workpc MINGW64 /c/work/worksource/master/dell (release-st)
+$
+

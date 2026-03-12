@@ -1,0 +1,268 @@
+ash-3.2$ source /Users/yuchangnan/opt/anaconda3/bin/activate
+ env /Users/yuchangnan/opt/anaconda3/bin/python /Users/yuchangnan/.vscode/extensions/ms-python.python-2020.6.91350/pythonFiles/lib/python/debugpy/launcher 49491 -- /Users/yuchangnan/Desktop/acodona/python1.py 
+(base) bash-3.2$  env /Users/yuchangnan/opt/anaconda3/bin/python /Users/yuchangnan/.vscode/extensions/ms-python.python-2020.6.91350/pythonFiles/lib/python/debugpy/launcher 49491 -- /Users/yuchangnan/Desktop/acodona/python1.py 
+conda activate base
+test
+(base) bash-3.2$ conda activate base
+(base) bash-3.2$  cd /Users/yuchangnan/Desktop/acodona ; env /Users/yuchangnan/opt/anaconda3/bin/python /Users/yuchangnan/.vscode/extensions/ms-python.python-2020.6.91350/pythonFiles/lib/python/debugpy/launcher 49501 -- /Users/yuchangnan/Desktop/acodona/python1.py 
+test
+next
+(base) bash-3.2$  cd /Users/yuchangnan/Desktop/acodona ; env /Users/yuchangnan/opt/anaconda3/bin/python /Users/yuchangnan/.vscode/extensions/ms-python.python-2020.6.91350/pythonFiles/lib/python/debugpy/launcher 49619 -- /Users/yuchangnan/Desktop/acodona/AI0.py 
+1 0 0 1
+1 0 0 1
+0 1 0 1
+0 1 0 1
+0 1 0 1
+(base) bash-3.2$ git config --global user.eamil "ycntokyo1@gmail.com"
+(base) bash-3.2$ git config --global user.name "ycntokyo1"
+(base) bash-3.2$ git remote add master https://github.com/ycntokyo/master.git
+(base) bash-3.2$ git push master
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+(base) bash-3.2$ git push --set-upstream master master
+To https://github.com/ycntokyo/master.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ycntokyo/master.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) bash-3.2$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(base) bash-3.2$ git remote add test https://github.com/ycntokyo/master.git
+(base) bash-3.2$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(base) bash-3.2$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(base) bash-3.2$ git remote add ycntokyo https://github.com/ycntokyo/master.git
+fatal: remote ycntokyo already exists.
+(base) bash-3.2$ git remote pull
+error: Unknown subcommand: pull
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) bash-3.2$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(base) bash-3.2$ git push -f origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) bash-3.2$ git push -f master
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+(base) bash-3.2$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(base) bash-3.2$ git pull origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) bash-3.2$ git remote show shared
+fatal: 'shared' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) bash-3.2$ git remote
+master
+test
+ycntokyo
+(base) bash-3.2$ git remote repository
+error: Unknown subcommand: repository
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) bash-3.2$ git remote
+master
+test
+ycntokyo
+(base) bash-3.2$ git remote -v
+master  https://github.com/ycntokyo/master.git (fetch)
+master  https://github.com/ycntokyo/master.git (push)
+test    https://github.com/ycntokyo/master.git (fetch)
+test    https://github.com/ycntokyo/master.git (push)
+ycntokyo        https://github.com/ycntokyo/master.git (fetch)
+ycntokyo        https://github.com/ycntokyo/master.git (push)
+(base) bash-3.2$ git remote add origin https://github.com/ycntokyo/master.git
+(base) bash-3.2$ git push -u origin master
+To https://github.com/ycntokyo/master.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ycntokyo/master.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) bash-3.2$ git push -f
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+(base) bash-3.2$ git remote -v
+master  https://github.com/ycntokyo/master.git (fetch)
+master  https://github.com/ycntokyo/master.git (push)
+origin  https://github.com/ycntokyo/master.git (fetch)
+origin  https://github.com/ycntokyo/master.git (push)
+test    https://github.com/ycntokyo/master.git (fetch)
+test    https://github.com/ycntokyo/master.git (push)
+ycntokyo        https://github.com/ycntokyo/master.git (fetch)
+ycntokyo        https://github.com/ycntokyo/master.git (push)
+(base) bash-3.2$ git pull
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ycntokyo/master
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+(base) bash-3.2$ git pull origin master
+From https://github.com/ycntokyo/master
+ * branch            master     -> FETCH_HEAD
+fatal: Could not read from '.git/MERGE_MSG': No such file or directory
+(base) bash-3.2$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+(base) bash-3.2$ git pull origin master
+From https://github.com/ycntokyo/master
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+(base) bash-3.2$ git pull origin master
+From https://github.com/ycntokyo/master
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+(base) bash-3.2$ 
+(base) bash-3.2$ 
+(base) bash-3.2$ git push --set-upstream origin master
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (24/24), 4.22 KiB | 0 bytes/s, done.
+Total 24 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/ycntokyo/master.git
+   a987963..d384d1b  master -> master
+Branch master set up to track remote branch master from origin.
+(base) bash-3.2$ 

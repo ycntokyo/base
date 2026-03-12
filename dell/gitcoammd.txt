@@ -1,0 +1,155 @@
+Last login: Sun Jul  5 16:41:28 on ttys002
+(base) yumasaminami-no-MacBook-Pro:~ yuchangnan$ ls
+Desktop		Downloads	Movies		Pictures	opt
+Documents	Library		Music		Public
+(base) yumasaminami-no-MacBook-Pro:~ yuchangnan$ cd Desktop
+(base) yumasaminami-no-MacBook-Pro:Desktop yuchangnan$ ls
+Untitled.ipynb
+acodona
+iApp
+いつやるの？Git入門 on Vimeo - Internet Explorer 2019-11-24 14-33-03.mp4
+(base) yumasaminami-no-MacBook-Pro:Desktop yuchangnan$ cd acodona
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ ls
+AI0.py		python1.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git status
+On branch master
+nothing to commit, working directory clean
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ 
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ vi test.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git add test.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   test.py
+
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit "test"
+error: pathspec 'test' did not match any file(s) known to git.
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit test.py "test" 
+error: pathspec 'test' did not match any file(s) known to git.
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit 
+Aborting commit due to empty commit message.
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit -m "test"
+[master 3dc209b] test
+ Committer: 兪昌南 <yuchangnan@yumasaminami-no-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 test.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git -v
+Unknown option: -v
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git --v
+Unknown option: --v
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git 
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit -m "test"
+On branch master
+nothing to commit, working directory clean
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git commit test.py -m "test"
+On branch master
+nothing to commit, working directory clean
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git status
+On branch master
+nothing to commit, working directory clean
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git clone https://github.com/ycntokyo/master.git
+Cloning into 'master'...
+Username for 'https://github.com': ycntokyo
+Password for 'https://ycntokyo@github.com': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ 
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ ls
+AI0.py		master		python1.py	test.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git remote -v
+master	https://github.com/ycntokyo/master.git (fetch)
+master	https://github.com/ycntokyo/master.git (push)
+test	https://github.com/ycntokyo/master.git (fetch)
+test	https://github.com/ycntokyo/master.git (push)
+ycntokyo	https://github.com/ycntokyo/master.git (fetch)
+ycntokyo	https://github.com/ycntokyo/master.git (push)
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ ls
+AI0.py		master		python1.py	test.py
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) yumasaminami-no-MacBook-Pro:acodona yuchangnan$ 

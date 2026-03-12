@@ -1,0 +1,40 @@
+これをremote reset しよう
+
+ブランチ運用ルール
+　88-st-taio->release-st->master
+
+リモートにブランチがない時、作成する、push
+git push origin HEAD:relase-st
+
+間違って作成しても、再度作成可能
+ブランチの削除
+git push origin :relase-st
+
+revert
+git revert 6d458ce
+
+git reset --hard HEAD~5
+vi dell/999.txt
+
+git add dell/999.txt
+
+以下のコマンドで継続、commitではない。
+この後、remote にpush
+git revert --continue
+#git commit -m "reset hard"
+
+
+git push origin HEAD:release-st
+ ! [rejected]        HEAD -> release-st (non-fast-forward)
+
+git push origin HEAD:release-st --force-with-lease
+
+git log --all --graph --decorate=full --oneline
+
+ローカルをリモートからリセット
+git reset --hard origin/master
+
+remoteをrevertする方法はない
+localをrevertかresetして、
+これをremoteに pushする
+

@@ -1,0 +1,17 @@
+
+動画
+https://www.youtube.com/watch?v=nJx-X0o0FVQhttps://www.youtube.com/watch?v=nJx-X0o0FVQ
+
+
+過去に Mac で Windows（VM）を動かす等で申しておりますが、そろそろ私が教室で利用しております Mac の立ち上がりや動作が明らかに重くなってきました。また2010年代前半の Mac は簡単に HDD を SSD に換装が可能なので行ってみます。
+
+MacBook Pro のモデルを識別する：https://support.apple.com/ja-jp/HT201300
+MacBook Air のモデルを識別する：https://support.apple.com/ja-jp/HT201862
+Time Machine で Mac をバックアップする：https://support.apple.com/ja-jp/HT201250
+
+おすすめ
+・Samsung SSD 500GB 860EVO：https://amzn.to/2T75QT8
+・Crucial SSD 500GB MX500：https://amzn.to/2Vv8mUD
+・トルクスドライバー・T8ドライバ：https://amzn.to/38fxZfa
+・115 in 1 精密ドライバーセット：https://amzn.to/2vf2mVz
+・シリコンパワー ノートPC用メモリ 1.35V (低電圧) DDR3L 1600 PC3L-12800 8GB×2枚 204Pin Mac 対応 永久保証：https://amzn.to/2T7vsiI
