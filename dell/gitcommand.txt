@@ -1,0 +1,96 @@
+
+ブランチの削除
+$ git branch -D 888-st-taio
+Deleted branch 888-st-taio (was 13fba04).
+
+$ git branch -a
+* 123-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/888-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+リモートブランチの削除
+$ git push origin :888-st-taio 
+
+チェックアウト
+$ git checkout -b 999-st-taio origin/release-st
+
+アップストリーム作成
+$ git push -u origin 999-st-taio
+
+アップストリームにpush
+$ git push
+123-st-taio->remote/123-st-taio
+
+プッシュ
+$ git push origin HEAD:release-st
+123-st-taio->release-st
+
+YCN@workpc MINGW64 /c/work/worksource/master (888-st-taio)
+$ git checkout -b 999-st-taio origin/release-st
+$ git branch -a
+  123-st-taio
+  888-st-taio
+* 999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+$ vim dell/gitcommand.txt
+
+$ git add dell/gitcommand.txt
+
+$ git push -u origin 999-st-taio
+
+$ git branch -a
+  123-st-taio
+  888-st-taio
+* 999-st-taio
+  master
+  release-join
+  release-st
+  remotes/origin/123-st-taio
+  remotes/origin/999-st-taio
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/release-join
+  remotes/origin/release-st
+
+$ git commit -m "999-st-taio変更"
+
+$ git merge origin 123-st-taio
+Auto-merging dell/gitcommand.txt
+CONFLICT (content): Merge conflict in dell/gitcommand.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ vi dell/gitcommand.txt
+
+$ git add dell/gitcommand.txt
+
+$ git commit -m "Conflict解除"
+
+$ git merge --continue
+fatal: There is no merge in progress (MERGE_HEAD missing).
+
+$ git merge origin 123-st-taio
+Already up to date.
+
+$ git push
+
+$ git merge origin 123-st-taio
+Already up to date.
+
+$ git checkout -b 999-st-taio origin/release-st
+
+

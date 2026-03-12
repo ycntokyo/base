@@ -1,0 +1,64 @@
+flutter install
+download
+/Users/yuchangnan/opt/にコピー
+
+sudo vi ~/.bash_profile
+export PATH=/Users/yuchangnan/opt/flutter/bin$PATH
+
+flutter doctor
+
+xcode11.7
+https://developer.apple.com/download/more/
+xcode_11.7.xip
+ダブルクリックapp
+今のiOSはxcode8.2しかインストールできない
+os ei caption xcode8.2
+flutterは11.01以降のXcodeを必要
+
+
+sudo xcode-select --switch /Applications/Xcode.app/Contents/developer
+
+sudo xcodebuild -license
+open -a Simulator
+
+古いXcode
+
+
+削除
+https://ticklecode.com/xcodeuninstall/
+
+android sdk
+
+https://developer.android.com/studio/index.html
+
+アプリケーションフォルダにD&Dして起動
+
+flutter doctor --android-licenses
+
+❌export JAVA_HOME=<path to jdk>
+❌export PATH=$JAVA_HOME/bin:$PATH
+
+Android Studio > Preferences > Plugins
+- [Install JetBrains plugin]から[Dart]をインストール
+- [Browse Repositories]から[Flutter]をインストール
+
+flutter doctor --android-licenses
+
+plugins->dart,flutterのチェックボックスを外すとOK
+
+
+IOS
+https://support.apple.com/ja-jp/HT201260
+
+IOSUpdate
+https://support.apple.com/ja-jp/HT201475
+
+ios device
+open -a Simulator.app
+
+Users/yuchangnan/Library/Android/sdk/emulator/lib64/qt/lib/libQt5WebEngineCoreAndroidEmu.5.12.1.dylib
+Users/yuchangnan/Library/Android/sdk/emulator/lib64/qt/lib/libQt5WebEngineCoreAndroidEmu.5.12.1.dylib
+
+?尝试通过将Emulated Performance Graphics选项设置为Software
+
+https://github.com/intel/haxm/releases/tag/v7.3.2
